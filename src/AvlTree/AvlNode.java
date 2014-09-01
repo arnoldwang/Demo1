@@ -1,4 +1,4 @@
-package AvlTreeDataStructures;
+package AvlTree;
 
 class AvlNode {
 	

@@ -1,4 +1,4 @@
-package AvlTreeDataStructures;
+package AvlTree;
 
 public class AvlTree {
 	private AvlNode root;
@@ -78,5 +78,10 @@ public class AvlTree {
 	private static int max(int a, int b) {
 		// TODO Auto-generated method stub
 		return a > b ? a : b;
+	}
+	
+	//对外接口
+	public void insert(Comparable x){
+		root = insert(x, root);
 	}
 }

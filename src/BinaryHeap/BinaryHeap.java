@@ -1,4 +1,4 @@
-package BinaryHeapDataStructures;
+package BinaryHeap;
 
 public class BinaryHeap {
 	private static final int DEFAULT_CAPACITY = 100;

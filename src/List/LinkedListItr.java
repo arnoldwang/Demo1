@@ -1,4 +1,4 @@
-package ListDataStructure;
+package List;
 
 public class LinkedListItr {
 	ListNode current;

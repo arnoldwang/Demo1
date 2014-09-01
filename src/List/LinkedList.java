@@ -1,4 +1,4 @@
-package ListDataStructure;
+package List;
 
 public class LinkedList {
 	private ListNode header;

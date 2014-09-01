@@ -1,4 +1,4 @@
-package ListDataStructure;
+package List;
 
 class ListNode {
 	Object element;

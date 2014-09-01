@@ -1,4 +1,4 @@
-package BinaryTreeDataStructures;
+package BinaryTree;
 
 class BinaryNode {
 	
