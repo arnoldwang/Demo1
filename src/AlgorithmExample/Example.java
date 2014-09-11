@@ -8,7 +8,7 @@ public class Example {
 
 	public static void main(String[] args) {
 		Comparable[] a = { 4, -3, 5, -2, -1, 2, 6, -2, 0 };
-		Comparable[] b = { 4, -3, 5, -2, -1, 2, 6, -2, 0 };
+		Comparable[] b = {3,6,1,9,7,8};
 		
 		// int maxSubSum = MaxSubSum.maxSubSum2(a);
 		int test = 0;
@@ -23,7 +23,7 @@ public class Example {
 		// EightQueen.eightQueenSolution();
 		// ShootProblem.findFactor(4, 7, new ArrayList<Integer>());
 		// System.out.println(test++);
-		 System.out.println(testStr);
+//		 System.out.println(testStr);
 		
 //		long start1 = System.currentTimeMillis();
 //		while (test < 10000000) {
@@ -34,14 +34,14 @@ public class Example {
 //		long start2 = System.currentTimeMillis();
 //		test = 0;
 //		while (test < 10000000) {
-//			Sort.heapSort(b);
+			Sort.heapSort(a);
 //			test++;
 //		}
 //		long end2 = System.currentTimeMillis();
 //		System.out.println(end1-start1);
 //		System.out.println(end2-start2);
-		Comparable input[] = {3,6,1,9,7,8};  
-		Sort.quickSort(input);
+//		Comparable input[] = {3,6,1,9,7,8};  
+//		Sort.quickSort(input);
 	}
 
 }

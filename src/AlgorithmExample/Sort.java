@@ -62,8 +62,8 @@ public class Sort {
 		int child;
 		Comparable tmp = a[i];
 
-		for (; i * 2 < n; i = child) {
-			child = i * 2;
+		for (; i * 2 + 1< n; i = child) {
+			child = i * 2 + 1;
 			if (child != n - 1 && a[child].compareTo(a[child + 1]) < 0)
 				child++;
 			if (tmp.compareTo(a[child]) < 0)
@@ -83,8 +83,8 @@ public class Sort {
 			percolateDown(a, 0, i);
 		}
 
-		// for (Comparable item : a)
-		// System.out.print(item + " ");
+		for (Comparable item : a)
+			System.out.print(item + " ");
 	}
 
 	private final static void swapReference(Comparable[] a, int begin, int end) {
