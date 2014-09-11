@@ -40,6 +40,8 @@ public class Example {
 //		long end2 = System.currentTimeMillis();
 //		System.out.println(end1-start1);
 //		System.out.println(end2-start2);
+		Comparable input[] = {3,6,1,9,7,8};  
+		Sort.quickSort(input);
 	}
 
 }

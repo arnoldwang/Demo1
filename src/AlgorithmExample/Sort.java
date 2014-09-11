@@ -147,22 +147,32 @@ public class Sort {
 	}
 
 	private static void quickSort(Comparable[] a, int left, int right) {
-		Comparable pivot = median3(a, left, right);
-		
-		int i = left, j = right -1;
-		while(true){
-			while(a[++i].compareTo(pivot)<0){}
-			while(a[--j].compareTo(pivot)>0){}
-			
-			if(i<j)
-				swapReference(a, i, j);
-			else
-				break;
-		}
-		swapReference(a, i, right-1);
-		
-		quickSort(a, left, i-1);
-		quickSort(a, i+1,right);
-		
+		if (left + 10 < right) {//排序个数少于10个的情况用插入排序更高效
+			Comparable pivot = median3(a, left, right);
+
+			int i = left, j = right - 1;
+			while (true) {
+				while (a[++i].compareTo(pivot) < 0) {
+				}
+				while (a[--j].compareTo(pivot) > 0) {
+				}
+
+				if (i < j)
+					swapReference(a, i, j);
+				else
+					break;
+			}
+			swapReference(a, i, right - 1);
+
+			quickSort(a, left, i - 1);
+			quickSort(a, i + 1, right);
+		} else
+			insertSort(a);
+	}
+
+	public static void quickSort(Comparable[] a) {
+		quickSort(a, 0, a.length - 1);
+		for (Comparable entry : a)
+			System.out.print(entry + " ");
 	}
 }
