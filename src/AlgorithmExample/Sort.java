@@ -175,4 +175,23 @@ public class Sort {
 		for (Comparable entry : a)
 			System.out.print(entry + " ");
 	}
+	
+	public static void countSort(int[] a, int k){
+		int[] c = new int[k];
+		
+		for(int i = 0; i < a.length; i++){
+			c[a[i]]++;
+		}
+		
+		int z = 0;
+		
+		for(int i = 0; i < k; i++){
+			while(c[i]-- > 0)
+				a[z++] = i;
+		}
+		
+		for(int temp: a)
+			System.out.print(temp + " ");
+		
+	}
 }
