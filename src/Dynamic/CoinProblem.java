@@ -9,14 +9,8 @@ public class CoinProblem {
 	 * @param values
 	 *            :保存每一种硬币的币值的数组
 	 * 
-	 * @param valueKinds
-	 *            :币值不同的硬币种类数量，即coinValue[]数组的大小
-	 * 
 	 * @param money
 	 *            :需要找零的面值
-	 * 
-	 * @param coinsUsed
-	 *            :保存面值为i的纸币找零所需的最小硬币数
 	 */
 
 	public static int makeChange(int[] values, int money) {
